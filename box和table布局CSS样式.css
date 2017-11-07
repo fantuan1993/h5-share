@@ -1,0 +1,63 @@
+/*手机端用-webkit-box 进行盒子布局 begin*/
+/*一般用于底部菜单、导航等自适应宽度布局*/
+.berth-block {
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin-top: 0.6rem;
+    display: -moz-box;
+    display: -webkit-box;
+}
+
+.berth-block > span {
+    display: block;
+    line-height: 2.35rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    width: 1px;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+}
+
+/*手机端用-webkit-box 进行盒子布局 begin*/
+
+/*宽度可控：begin*/
+.item {
+    margin-bottom: 0.8rem;
+    color: #8c8167;
+    font-size: 0.65rem;
+    display: table;
+    width: 100%;
+}
+
+.item > div {
+    display: table-cell;
+}
+
+.item > div:nth-child(2n-1) {
+    width: 0.8rem;
+}
+
+.item-num {
+    width: 100%;
+    height: 0.8rem;
+    /*。。。。*/
+}
+
+.item-text {
+    padding-left: 3%;
+}
+
+/*宽度可控：end*/
+
+/* 对应的页面DOM
+<div class="item">
+    <div>
+        <span class="item-num">1</span>
+    </div>
+    <div class="item-text">新用户注册即可获得一张停车优惠券</div>
+</div>
+*/
